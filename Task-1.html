@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #111827;
+        color: #fff;
+      }
+      .navbar {
+        height: 50px;
+        padding-right: 30px;
+        box-shadow: 0px 0px 12px #494949;
+      }
+
+      .navbar-list {
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        justify-content: end;
+        gap: 20px;
+        align-items: center;
+        height: 50px;
+      }
+      .navbar .navbar-list li {
+        padding: 3px 10px;
+      }
+      .navbar .navbar-list li:hover {
+        cursor: pointer;
+        background-color: blue;
+        padding: 3px 10px;
+        border-radius: 5px;
+      }
+      .navbar .navbar-list li:active {
+        background-color: #000085;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+      .main .main-left .greet {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .main .main-left .greet span {
+        font-size: 25px;
+      }
+      .main .main-left h1 {
+        font-size: 50px;
+      }
+      .main .main-left h1::first-letter {
+        color: #c5c559;
+      }
+      .main .main-left .role {
+        color: #c5c559;
+        font-size: 25px;
+      }
+
+      .last {
+        margin-top: 50px;
+      }
+      .last .image {
+        width: 200px;
+      }
+      .last-heading {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .last-heading h1 {
+        font-size: 30px;
+      }
+      .last-heading hr {
+        width: 100px;
+        border: 5px solid blue;
+        border-radius: 10px;
+      }
+      .last .images-section {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .footer .footer-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 50px;
+      }
+
+      .footer .footer-icons img {
+        width: 30px;
+      }
+      .footer .footer-icons img:hover {
+        cursor: pointer;
+        scale: 1.2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li>Home</li>
+        <li>Projects</li>
+        <li>Technologies</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Main Section Start -->
+    <main class="main">
+      <div class="main-left">
+        <h3 class="greet">
+          <img
+            height="20px"
+            width="20px"
+            src="./assets/assets/waving-hand.png"
+            alt="Wave hand"
+          />
+          <span>Hi Everyone</span>
+        </h3>
+        <h1>Mark Anderson</h1>
+        <h3 class="role">Developer</h3>
+      </div>
+
+      <div class="main-right">
+        <img width="350px" src="./assets/assets/pc-image.png" alt="PC-Image" />
+      </div>
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Last Section Start -->
+    <section class="last">
+      <div class="last-heading">
+        <h1>Projects</h1>
+        <hr />
+      </div>
+      <div class="images-section">
+        <div class="images-section-left">
+          <img class="image" src="./assets/assets/image.png" alt="image" />
+          <p>Project 1</p>
+        </div>
+        <div class="images-section-right">
+          <img class="image" src="./assets/assets/image.png" alt="image" />
+          <p>Project 2</p>
+        </div>
+      </div>
+      <div class="images-section">
+        <div class="images-section-left">
+          <img class="image" src="./assets/assets/image.png" alt="image" />
+          <p>Project 3</p>
+        </div>
+        <div class="images-section-right">
+          <img class="image" src="./assets/assets/image.png" alt="image" />
+          <p>Project 4</p>
+        </div>
+      </div>
+    </section>
+    <!-- Last Section End -->
+
+    <footer class="footer">
+      <div class="last-heading">
+        <h1>Contact</h1>
+        <hr />
+      </div>
+      <div class="footer-icons">
+        <img src="./assets/assets/github.png" alt="github" />
+        <img src="./assets/assets/linkedin.png" alt="linkedin" />
+        <img src="./assets/assets/outlook.png" alt="outlook" />
+      </div>
+    </footer>
+  </body>
+</html>
